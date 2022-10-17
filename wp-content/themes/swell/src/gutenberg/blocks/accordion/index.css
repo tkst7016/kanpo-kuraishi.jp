@@ -1,0 +1,123 @@
+.swell-block-accordion__item + .swell-block-accordion__item {
+  margin-top: 0.5em;
+}
+
+.swell-block-accordion__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--color_gray);
+}
+
+.swell-block-accordion__label {
+  flex: 1 1 auto;
+  padding-right: 1em;
+  word-break: break-all;
+}
+
+.swell-block-accordion__icon {
+  flex: 0 0 auto;
+  width: 1.25em;
+  font-size: 1.25em;
+  text-align: right;
+}
+
+.swell-block-accordion__body {
+  height: auto;
+  padding: 1em;
+  overflow: hidden;
+  opacity: 1;
+  transition: 0.25s;
+}
+.swell-block-accordion__body[aria-hidden=true] {
+  height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  opacity: 0;
+}
+
+.swell-block-accordion.is-style-simple .swell-block-accordion__title,
+.swell-block-accordion.is-style-border .swell-block-accordion__title {
+  background: none;
+}
+.swell-block-accordion.is-style-simple .swell-block-accordion__body,
+.swell-block-accordion.is-style-border .swell-block-accordion__body {
+  margin: 0 0.5em;
+  padding: 1em 0.5em;
+  border-top: 1px dashed var(--color_border);
+}
+
+.is-style-border > .swell-block-accordion__item {
+  border: 1px solid var(--color_border);
+}
+
+.is-style-simple > .swell-block-accordion__item {
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--color_border);
+}
+.is-style-simple > .swell-block-accordion__item:first-child {
+  border-top: 1px solid var(--color_border);
+}
+.is-style-simple > .swell-block-accordion__item + .swell-block-accordion__item {
+  margin-top: 0;
+}
+
+.swell-block-accordion.is-style-main .swell-block-accordion__title {
+  color: #fff;
+  background-color: var(--color_main);
+}
+.swell-block-accordion.is-style-main .swell-block-accordion__body {
+  border: solid 1px var(--color_main);
+  border-top: none;
+}
+
+.c-switchIconBtn,
+.c-switch_icon_btn {
+  position: relative;
+  display: block;
+}
+.c-switchIconBtn .__icon--opened,
+.c-switchIconBtn .__icon_opened, .c-switchIconBtn .__icon--closed,
+.c-switchIconBtn .__icon_closed,
+.c-switch_icon_btn .__icon--opened,
+.c-switch_icon_btn .__icon_opened,
+.c-switch_icon_btn .__icon--closed,
+.c-switch_icon_btn .__icon_closed {
+  display: block;
+  width: 100%;
+  font-size: inherit;
+  line-height: 1;
+  transition: transform 0.25s, opacity 0.25s;
+}
+.c-switchIconBtn .__icon--closed,
+.c-switchIconBtn .__icon_closed,
+.c-switch_icon_btn .__icon--closed,
+.c-switch_icon_btn .__icon_closed {
+  transform: scale(1) rotate(0);
+}
+.c-switchIconBtn .__icon--opened,
+.c-switchIconBtn .__icon_opened,
+.c-switch_icon_btn .__icon--opened,
+.c-switch_icon_btn .__icon_opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.5) rotate(-180deg);
+  opacity: 0;
+}
+.c-switchIconBtn[data-opened=true] > .__icon--closed,
+.c-switchIconBtn[data-opened=true] > .__icon_closed,
+.c-switch_icon_btn[data-opened=true] > .__icon--closed,
+.c-switch_icon_btn[data-opened=true] > .__icon_closed {
+  transform: scale(0.5) rotate(180deg);
+  opacity: 0;
+}
+.c-switchIconBtn[data-opened=true] > .__icon--opened,
+.c-switchIconBtn[data-opened=true] > .__icon_opened,
+.c-switch_icon_btn[data-opened=true] > .__icon--opened,
+.c-switch_icon_btn[data-opened=true] > .__icon_opened {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */

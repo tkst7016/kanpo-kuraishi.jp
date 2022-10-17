@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*
+    Template: swell
+    Theme Name: SWELL CHILD
+    Theme URI: https://swell-theme.com/
+    Description: SWELLの子テーマ
+    Version: 1.0.0
+    Author: LOOS WEB STUDIO
+    Author URI: https://loos-web-studio.com/
+
+    License: GNU General Public License
+    License URI: http://www.gnu.org/licenses/gpl.html
+*/
+/*------------ noto serif jpインポート---------*/
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* ファーストビューのスライダー */
+.p-mainVisual .c-filterLayer::before {
+    background-color: transparent !important;
+}
+
+/* スライダーとコンテンツの隙間をなくす*/
+.top #content {
+    padding-top: 0 !important;
+}
+
+.l-content {
+    padding-top: 0;
+}
+
+/* コンポーネント */
+.has-radius {
+    border-radius: 50px !important;
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+/* TOP お知らせ */
+.top-news {
+    .content-inner {
+        padding: 3em;
+    }
+}
+
+/* TOP くら石について */
+.top-about {
+    text-align: center;
+
+    h3 {
+        display: inline-block;
+        text-align: center !important;
+        padding: .5em !important;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .has-border-radius {
+        border: 2px solid #FFF !important;
+        border-radius: 10px;
+    }
+}
+
+/* ご相談の多い症状 */
+
+.has-btn-round {
+    .swell-block-button {
+        width: 100%;
+
+    }
+
+    [class*=is-style-btn_] a {
+        display: inline-block;
+        width: 100%;
+        padding: 30% 0;
+        border-radius: 50%;
+        text-align: center;
+        background: #FFF;
+    }
+
+    [class*=is-style-btn_] a:hover {
+        background: var(--color_main);
+    }
+
+    @media(min-width: 600px) and (max-width:781px) {
+        [class*=is-style-btn_] a {
+            padding: 25% 0;
+        }
+    }
+}
+
+/* オンラインショップ */
+.has-btn-bnr {
+    .swell-block-button {
+        width: 30%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+
+    }
+
+    [class*=is-style-btn_] a {
+        display: inline-block;
+        width: 100%;
+        padding: 30% 0;
+        border-radius: 50%;
+        text-align: center;
+        background: #FFF;
+    }
+
+    [class*=is-style-btn_] a:hover {
+        background: var(--color_main);
+    }
+
+    @media(max-width: 599px) {
+        .swell-block-button {
+            width: 50%;
+        }
+
+        [class*=is-style-btn_] a {
+            padding: 25% 0;
+        }
+    }
+}
